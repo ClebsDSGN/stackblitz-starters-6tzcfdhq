@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #111;
+          color: #fff;
+          line-height: 1.6;
+      }
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          background-color: #000;
+      }
+      header .social-links a {
+          color: #fff;
+          margin: 0 0.5rem;
+          text-decoration: none;
+          font-size: 0.9rem;
+      }
+      header .social-links a:hover {
+          color: #1adcff;
+      }
+      .hero {
+          text-align: center;
+          padding: 4rem 2rem;
+          background-color: #111;
+      }
+      .hero img {
+          width: 150px;
+          height: 150px;
+          border-color: white;
+          border: 5px solid white;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+      }
+      .hero h1 {
+            font-size: clamp(2em, 2em + 1vw, 2.5em);
+            overflow: hidden;
+            border-right: 2px solid #38a3a5;
+            white-space: nowrap;
+            letter-spacing: 2px;
+            animation: typing 4s steps(20, end), blink 0.6s step-end infinite;
+            
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #03eebf; }
+        }
+      }
+      .hero p {
+          font-size: 12rem;
+          color: #fff;
+      }
+      .clients {
+          padding: 2rem 0;
+          text-align: center;
+          background-color: #222;
+      }
+      .clients a {
+          display: inline-block;
+          margin: 1rem;
+      }
+      .clients img {
+          max-width: 120px;
+          transition: transform 0.3s ease;
+      }
+      .clients img:hover {
+          transform: scale(1.1);
+      }
+      .services {
+          text-align: center;
+          padding: 4rem 2rem;
+      }
+      .services h2 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+      }
+      .service-items {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+      }
+      .service {
+          background-color: #222;
+          padding: 1.5rem;
+          border-radius: 8px;
+          width: 300px;
+      }
+      .service h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+      }
+      .service p {
+          color: #aaa;
+      }
+      footer {
+          background-color: #000;
+          text-align: center;
+          padding: 2rem 1rem;
+      }
+      footer button {
+          background-color: #80ed99;
+          color: #000;
+          border: none;
+          padding: 0.8rem 2rem;
+          font-size: 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      footer button:hover {
+          background-color: #38a3a5;
+      }
+      .logo img{
+        width: 50px;
+        height: 50x;
+      }  
+      
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/St33GZY/logo-cfernandes.png" alt="logo Cfernandes">
+    </div>
+
+      <div class="social-links">
+          <a href="https://www.linkedin.com/in/cleberson-fernandes-07789478/">LinkedIn</a>
+          <a href="https://www.behance.net/clebersondesigners">Behance</a>
+          <a href="#">Instagram</a>
+      </div>
+  </header>
+<!-- Foto de perfil e texto de apresentação -->
+  <section class="hero">
+      <img src="https://i.ibb.co/HGJRhc9/foto-perfil.jpg" alt="Profile Picture">
+      <h1>Olá, meu nome é Cleberson Fernandes</h1>
+      <p> Brand Designer</p>
+  </section>
+
+  <!-- SlideShow -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .slides img {
+            width: 85%;
+            height: 85%;
+            border-radius: 6px;
+        }
+        .dot-container {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .dot {
+            height: 7px;
+            width: 7px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #1adcff;
+        }
+
+</style>
+<body>
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="https://i.ibb.co/fFk32fm/banner-site-VL.png" alt="Slide 1">
+        </div>
+        <div class="slides">
+            <img src="https://i.ibb.co/Y0pSzNf/banner-site-JRS.png" alt="Slide 2">
+        </div>
+        <div class="slides">
+            <img src="https://i.ibb.co/0FjhMZs/banner-site-LN.png" alt="Slide 3">
+        </div>
+        <!-- Navigation dots -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Muda a cada 3 segundos
+        }
+
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+    </script>
+    <!--Fim do Slide Show -->
+</body>
+
+<!-- Serviços -->
+  <section class="services">
+      <h2>Crio identidades visuais que contam histórias únicas. </h2>
+      <div class="service-items">
+          <div class="service">
+              <h3>Branding</h3>
+              <p>Meu serviço de Branding vai além da criação visual. Ajudo a construir marcas memoráveis, que se conectam com seu público e geram valor por meio de identidade, propósito e estratégia. </p>
+          </div>
+          <div class="service">
+              <h3>UX/UI</h3>
+              <p>Meu foco no UX/UI é criar interfaces funcionais e atraentes, priorizando a experiência do usuário e construindo layouts intuitivos e estratégicos que conectam design e usabilidade. </p>
+          </div>
+          <div class="service">
+              <h3>Design para redes sociais</h3>
+              <p>Meu serviço de design para redes sociais transforma sua comunicação em impacto visual. Crio layouts estratégicos e criativos que refletem a essência da sua marca e fortalecem sua presença digital.</p>
+          </div>
+      </div>
+  </section>
+  <!--  Fim dos Serviços-->
+
+  <footer>
+      <p>Precisa de um orçamento?</p>
+      <button>Vamos conversar</button>
+  </footer>
+  </body>
+</html>
